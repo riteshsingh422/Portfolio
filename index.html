@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritesh - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Ritesh Singh</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box" style="display: flex; align-items: center; justify-content: center;">
+              <img src="./assets/images/email-unscreen.gif" alt="email icon" style="width: 40px; height: 40px; object-fit: contain;">
+              <!-- <ion-icon name="mail-outline"></ion-icon> -->
+            </div>
+            
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:riteshsingh.cst1@gmail.com" class="contact-link">riteshsingh.cst1@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/telephone-unscreen.gif" alt="mobile icon" style="width: 40px; height: 40px; object-fit: contain;">
+              <!-- <ion-icon name="phone-portrait-outline"></ion-icon> -->
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 9233333382</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/deadline-unscreen.gif" alt="mobile icon" style="width: 40px; height: 40px; object-fit: contain;">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 16, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/location-unscreen.gif" alt="mobile icon" style="width: 40px; height: 40px; object-fit: contain;">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Durgapur, West Bengal, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/riteshsingh422" class="social-link">
+              <img src="./assets/images/github.png" alt="mobile icon" style="width: 25px; height: 25px; object-fit: contain;">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/riteshsinghit/" class="social-link">
+              <img src="./assets/images/linkedin.png" alt="mobile icon" style="width: 25px; height: 25px; object-fit: contain;">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/its.rits_/" class="social-link">
+              <img src="./assets/images/instagram.png" alt="mobile icon" style="width: 25px; height: 25px; object-fit: contain;">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Doodle</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Software Engineer and Full-Stack Developer from India with 1.5+ years of hands-on experience in building modern, 
+            scalable web and mobile applications. I specialize in Python, JavaScript, React, and the Odoo ERP platform, with a solid 
+            command of both frontend and backend development.
+          </p>
+
+          <p>
+            I enjoy crafting clean, intuitive, and efficient user experiences, whether it's through interactive web interfaces or 
+            powerful backend systems. With proficiency in databases like PostgreSQL, MySQL, and MongoDB, I build systems that are 
+            not only functional but also reliable and scalable.
+
+          </p>
+
+          <p>
+            I take pride in writing well-structured code and bringing a thoughtful, user-centered approach to every project. 
+            Whether it’s a custom ERP module, a responsive React app, or an API-driven backend — I aim to deliver solutions that 
+            are both technically sound and creatively designed.
+
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/odoo.gif" alt="mobile icon" style="width: 70px; height: 70px; object-fit: contain;">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Odoo Developer</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality Odoo development delivered at a professional level.                
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/web.gif" alt="mobile icon" style="width: 70px; height: 70px; object-fit: contain;">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mobile.gif" alt="mobile icon" style="width: 100px; height: 100px; object-fit: contain;">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/drawing.gif" alt="mobile icon" style="width: 100px; height: 100px; object-fit: contain;">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Doodling</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality doodle art created at a professional level..
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="resume-image">
+          <img src="./assets/images/resume.jpg" alt="My Resume" width="100%" loading="lazy">
+        </section>
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+      
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+      
+          <ul class="project-list">
+      
+            <!-- Odoo Development Projects (Only visible in All) -->
+            <li class="project-item active" data-filter-item data-category="odoo development">
+              <a href="https://chillopositefestival.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/chilo.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Chilloposite Festival</h3>
+                <p class="project-category">Odoo development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="odoo development">
+              <a href="https://falcann.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/falcann.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Falcann</h3>
+                <p class="project-category">Odoo development</p>
+              </a>
+            </li>
+      
+            <!-- Web Development Projects -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://insabhi.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/webdev.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Insabhi</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://watersupplier.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/aqua.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">AquaNest</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://barsiwebsite.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/barsi.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Barsi</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://photomaniarits.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/photomania.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Photomania</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://schoolmultipagewebsite.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/school.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">School Website</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://portfolioanimateweb.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/resume.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://eclectic-macaron-d15ba9.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <video src="./assets/images/animated.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%;"></video>
+                </figure>
+                <h3 class="project-title">Animated Website</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+          </ul>
+      
+        </section>
+      
+      </article>
+      
+      <!--
+        - #Doodle
+      -->
+
+      <article class="blog" data-page="doodle">
+        <header>
+          <h2 class="h2 article-title">Doodle</h2>
+        </header>
+      
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art1.jpg" alt="art1" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art2.jpg" alt="art2" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art3.jpg" alt="art3" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art4.jpg" alt="art4" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art5.jpg" alt="art5" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/art6.jpg" alt="art6" loading="lazy">
+                </figure>
+              </a>
+            </li>
+      
+          </ul>
+        </section>
+      </article>
+      
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117057.26374715757!2d87.21777269584894!3d23.531081960339275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7710b47a89171%3A0x429e1bdb57e009dd!2sDurgapur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1751755373766!5m2!1sen!2sin" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
